@@ -1,0 +1,41 @@
+{
+    "name": "unibrick/twcompo",
+    "description": ":package_description",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Unibrick",
+            "email": "unibricks@yandex.com"
+        }
+    ],
+    "homepage": "https://github.com/unibrick/twcompo",
+    "keywords": ["Laravel", "TwCompo"],
+    "require": {
+        "illuminate/support": "^10.0"
+    },
+    "require-dev": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Unibrick\\TwCompo\\": "./src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Unibrick\\TwCompo\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Unibrick\\TwCompo\\TwCompoServiceProvider"
+            ],
+            "aliases": {
+                "TwCompo": "Unibrick\\TwCompo\\Facades\\TwCompo"
+            }
+        }
+    }
+}
